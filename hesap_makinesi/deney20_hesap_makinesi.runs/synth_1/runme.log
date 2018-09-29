@@ -1,0 +1,372 @@
+
+*** Running vivado
+    with args -log hesap_makinasi.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source hesap_makinasi.tcl
+
+
+****** Vivado v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source hesap_makinasi.tcl -notrace
+Command: synth_design -top hesap_makinasi -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7412 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 344.938 ; gain = 93.336
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'hesap_makinasi' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/main.vhd:33]
+INFO: [Synth 8-3491] module 'giris' declared at 'D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/giris.vhd:26' bound to instance 'Inst_giris' of component 'giris' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/main.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'giris' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/giris.vhd:41]
+WARNING: [Synth 8-614] signal 'anot' is read in the process but is not in the sensitivity list [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/giris.vhd:57]
+WARNING: [Synth 8-614] signal 'sayi1_ondalik' is read in the process but is not in the sensitivity list [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/giris.vhd:57]
+WARNING: [Synth 8-614] signal 'sayi1_birlik' is read in the process but is not in the sensitivity list [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/giris.vhd:57]
+WARNING: [Synth 8-614] signal 'sayi2_ondalik' is read in the process but is not in the sensitivity list [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/giris.vhd:57]
+WARNING: [Synth 8-614] signal 'sayi2_birlik' is read in the process but is not in the sensitivity list [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/giris.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'giris' (1#1) [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/giris.vhd:41]
+INFO: [Synth 8-3491] module 'islem_blogu' declared at 'D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/islem_blogu.vhd:24' bound to instance 'Inst_islem_blogu' of component 'islem_blogu' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/main.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'islem_blogu' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/islem_blogu.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'islem_blogu' (2#1) [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/islem_blogu.vhd:50]
+INFO: [Synth 8-3491] module 'binbcd8' declared at 'D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/binbcd8.vhd:11' bound to instance 'Inst_binbcd8' of component 'binbcd8' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/main.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'binbcd8' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/binbcd8.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'binbcd8' (3#1) [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/binbcd8.vhd:18]
+INFO: [Synth 8-3491] module 'harici_gosterge' declared at 'D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/harici_gosterge.vhd:24' bound to instance 'Inst_harici_gosterge' of component 'harici_gosterge' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/main.vhd:131]
+INFO: [Synth 8-638] synthesizing module 'harici_gosterge' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/harici_gosterge.vhd:46]
+WARNING: [Synth 8-614] signal 'anot' is read in the process but is not in the sensitivity list [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/harici_gosterge.vhd:96]
+INFO: [Synth 8-256] done synthesizing module 'harici_gosterge' (4#1) [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/harici_gosterge.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'hesap_makinasi' (5#1) [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/main.vhd:33]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 386.516 ; gain = 134.914
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 386.516 ; gain = 134.914
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/constrs_1/new/hesap_makinesi.xdc]
+Finished Parsing XDC File [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/constrs_1/new/hesap_makinesi.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/constrs_1/new/hesap_makinesi.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hesap_makinasi_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/hesap_makinasi_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 697.785 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 697.785 ; gain = 446.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 697.785 ; gain = 446.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 697.785 ; gain = 446.184
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/giris.vhd:90]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/islem_blogu.vhd:74]
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element sayi_sonuc_bolum_reg was removed.  [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/islem_blogu.vhd:64]
+INFO: [Synth 8-5544] ROM "katot" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/harici_gosterge.vhd:105]
+WARNING: [Synth 8-327] inferring latch for variable 'led_reg' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/giris.vhd:55]
+WARNING: [Synth 8-327] inferring latch for variable 'bolen_reg' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/islem_blogu.vhd:98]
+WARNING: [Synth 8-327] inferring latch for variable 'katot_reg' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/harici_gosterge.vhd:118]
+WARNING: [Synth 8-327] inferring latch for variable 'dp_reg' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/harici_gosterge.vhd:118]
+WARNING: [Synth 8-327] inferring latch for variable 'sayi_birlik_reg' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/harici_gosterge.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'sayi_binlik_reg' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/harici_gosterge.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'sayi_yuzluk_reg' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/harici_gosterge.vhd:76]
+WARNING: [Synth 8-327] inferring latch for variable 'sayi_onluk_reg' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/harici_gosterge.vhd:65]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 697.785 ; gain = 446.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 14    
+	   3 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   4 Input      7 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 28    
+	   4 Input      2 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	   4 Input      1 Bit        Muxes := 3     
+	  11 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module giris 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Muxes : 
+	   4 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+Module islem_blogu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 6     
+Module binbcd8 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 9     
+	   2 Input      3 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 17    
+Module harici_gosterge 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Muxes : 
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 3     
+	  11 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element Inst_giris/counter_reg was removed.  [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/giris.vhd:90]
+WARNING: [Synth 8-6014] Unused sequential element Inst_islem_blogu/sayi_sonuc_bolum_reg was removed.  [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/islem_blogu.vhd:64]
+WARNING: [Synth 8-6014] Unused sequential element Inst_harici_gosterge/counter_reg was removed.  [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.srcs/sources_1/new/harici_gosterge.vhd:105]
+INFO: [Synth 8-3886] merging instance 'Inst_islem_blogu/state_reg[1]' (FDC) to 'Inst_islem_blogu/state_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Inst_islem_blogu/state_reg[2] )
+INFO: [Synth 8-3886] merging instance 'Inst_harici_gosterge/sayi_binlik_reg[1]' (LD) to 'Inst_harici_gosterge/sayi_binlik_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Inst_harici_gosterge/sayi_binlik_reg[2]' (LD) to 'Inst_harici_gosterge/sayi_binlik_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Inst_harici_gosterge/sayi_binlik_reg[3] )
+WARNING: [Synth 8-3332] Sequential element (Inst_harici_gosterge/sayi_binlik_reg[3]) is unused and will be removed from module hesap_makinasi.
+WARNING: [Synth 8-3332] Sequential element (Inst_islem_blogu/state_reg[2]) is unused and will be removed from module hesap_makinasi.
+WARNING: [Synth 8-3332] Sequential element (Inst_islem_blogu/state_reg[0]) is unused and will be removed from module hesap_makinasi.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 697.785 ; gain = 446.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 697.785 ; gain = 446.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 697.785 ; gain = 446.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 697.785 ; gain = 446.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 697.785 ; gain = 446.184
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 697.785 ; gain = 446.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 697.785 ; gain = 446.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 697.785 ; gain = 446.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 697.785 ; gain = 446.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 697.785 ; gain = 446.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    12|
+|3     |LUT1   |     5|
+|4     |LUT2   |    34|
+|5     |LUT3   |    14|
+|6     |LUT4   |    17|
+|7     |LUT5   |    16|
+|8     |LUT6   |    80|
+|9     |FDCE   |    12|
+|10    |FDPE   |     4|
+|11    |FDRE   |    35|
+|12    |LD     |    32|
+|13    |LDC    |     4|
+|14    |IBUF   |    13|
+|15    |OBUF   |    24|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------------+----------------+------+
+|      |Instance               |Module          |Cells |
++------+-----------------------+----------------+------+
+|1     |top                    |                |   304|
+|2     |  Inst_giris           |giris           |    56|
+|3     |  Inst_harici_gosterge |harici_gosterge |   119|
+|4     |  Inst_islem_blogu     |islem_blogu     |    89|
++------+-----------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 697.785 ; gain = 446.184
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 697.785 ; gain = 134.914
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 697.785 ; gain = 446.184
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 61 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 4 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 36 instances were transformed.
+  LD => LDCE: 28 instances
+  LD => LDCE (inverted pins: G): 4 instances
+  LDC => LDCE: 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+34 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 697.785 ; gain = 458.707
+INFO: [Common 17-1381] The checkpoint 'D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.runs/synth_1/hesap_makinasi.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file hesap_makinasi_utilization_synth.rpt -pb hesap_makinasi_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.030 . Memory (MB): peak = 697.785 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 13 20:00:23 2018...

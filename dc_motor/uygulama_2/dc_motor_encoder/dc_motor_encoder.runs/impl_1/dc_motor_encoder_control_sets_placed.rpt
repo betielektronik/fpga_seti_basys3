@@ -1,0 +1,79 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date         : Sat Jul  7 13:33:34 2018
+| Host         : A00134636 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file dc_motor_encoder_control_sets_placed.rpt
+| Design       : dc_motor_encoder
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    15 |
+| Unused register locations in slices containing registers |    36 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               4 |            3 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              20 |            5 |
+| Yes          | No                    | No                     |              77 |           36 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              71 |           23 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------+--------------------------+--------------------------+------------------+----------------+
+|     Clock Signal    |       Enable Signal      |     Set/Reset Signal     | Slice Load Count | Bel Load Count |
++---------------------+--------------------------+--------------------------+------------------+----------------+
+|  USER_CLK_IBUF_BUFG | FSM_onehot_i[3]_i_1_n_0  |                          |                1 |              3 |
+|  USER_CLK_IBUF_BUFG |                          |                          |                3 |              4 |
+|  USER_CLK_IBUF_BUFG | butun_vector[19]_i_1_n_0 |                          |                1 |              4 |
+|  USER_CLK_IBUF_BUFG | m                        | m[3]_i_1_n_0             |                1 |              4 |
+| ~clock_1khz_reg_n_0 |                          | count[3]_i_1_n_0         |                1 |              4 |
+|  USER_CLK_IBUF_BUFG | adim                     | adim[4]_i_1_n_0          |                2 |              5 |
+|  USER_CLK_IBUF_BUFG | adim_lcd                 |                          |                3 |              5 |
+|  USER_CLK_IBUF_BUFG | lcd                      |                          |                2 |              7 |
+|  USER_CLK_IBUF_BUFG |                          | clock_1khz               |                4 |             16 |
+|  USER_CLK_IBUF_BUFG | counter5                 | counter5[15]_i_1_n_0     |                3 |             16 |
+|  USER_CLK_IBUF_BUFG | butun_vector[15]_i_2_n_0 | butun_vector[15]_i_1_n_0 |                5 |             16 |
+|  USER_CLK_IBUF_BUFG | D                        |                          |                4 |             16 |
+|  USER_CLK_IBUF_BUFG | FSM_onehot_i_reg_n_0_[2] |                          |                7 |             16 |
+|  USER_CLK_IBUF_BUFG | sayac                    |                          |               18 |             26 |
+|  USER_CLK_IBUF_BUFG | counter3                 | counter4[26]_i_1_n_0     |               12 |             30 |
++---------------------+--------------------------+--------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 3      |                     1 |
+| 4      |                     4 |
+| 5      |                     2 |
+| 7      |                     1 |
+| 16+    |                     7 |
++--------+-----------------------+
+
+

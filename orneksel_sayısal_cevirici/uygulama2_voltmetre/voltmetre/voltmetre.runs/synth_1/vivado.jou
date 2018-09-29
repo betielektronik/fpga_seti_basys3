@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Mon Jul  9 21:00:25 2018
+# Process ID: 8772
+# Current directory: D:/ME/FPGA CD_rev2_1/deney9_adc/digital_voltmetre/voltmetre/voltmetre.runs/synth_1
+# Command line: vivado.exe -log voltmetre.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source voltmetre.tcl
+# Log file: D:/ME/FPGA CD_rev2_1/deney9_adc/digital_voltmetre/voltmetre/voltmetre.runs/synth_1/voltmetre.vds
+# Journal file: D:/ME/FPGA CD_rev2_1/deney9_adc/digital_voltmetre/voltmetre/voltmetre.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source voltmetre.tcl -notrace

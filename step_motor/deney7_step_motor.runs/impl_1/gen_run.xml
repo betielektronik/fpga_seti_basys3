@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1530352542">
+  <File Type="ROUTE-PWR" Name="step_motor_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="step_motor.tcl"/>
+  <File Type="PWROPT-DCP" Name="step_motor_pwropt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="step_motor_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="step_motor_reports.tcl"/>
+  <File Type="BG-DRC" Name="step_motor.drc"/>
+  <File Type="OPT-HWDEF" Name="step_motor.hwdef"/>
+  <File Type="OPT-DCP" Name="step_motor_opt.dcp"/>
+  <File Type="OPT-DRC" Name="step_motor_drc_opted.rpt"/>
+  <File Type="PLACE-DCP" Name="step_motor_placed.dcp"/>
+  <File Type="PLACE-IO" Name="step_motor_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="step_motor_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="step_motor_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="step_motor_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="step_motor_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="step_motor_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="step_motor_physopt.dcp"/>
+  <File Type="BG-BIT" Name="step_motor.bit"/>
+  <File Type="ROUTE-ERROR-DCP" Name="step_motor_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="step_motor_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="step_motor_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="step_motor_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="step_motor_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="step_motor_drc_routed.rpx"/>
+  <File Type="BITSTR-MSK" Name="step_motor.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="step_motor_methodology_drc_routed.rpt"/>
+  <File Type="BG-BGN" Name="step_motor.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="step_motor_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-RBT" Name="step_motor.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="step_motor_methodology_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="step_motor.bin"/>
+  <File Type="ROUTE-PWR-RPX" Name="step_motor_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="step_motor_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="step_motor_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="step_motor_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="step_motor_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="step_motor_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="step_motor_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="step_motor.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="step_motor_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="step_motor_postroute_physopt_bb.dcp"/>
+  <File Type="BITSTR-NKY" Name="step_motor.nky"/>
+  <File Type="BITSTR-BMM" Name="step_motor_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="step_motor.mmi"/>
+  <File Type="BITSTR-LTX" Name="step_motor.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="step_motor.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/step_motor.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="step_motor"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Desktop/Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Users/26011829/Desktop/Basys3_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1530349011"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream">
+      <Option Id="BinFile">1</Option>
+    </Step>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,426 @@
+
+*** Running vivado
+    with args -log dc_motor_encoder.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dc_motor_encoder.tcl
+
+
+****** Vivado v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source dc_motor_encoder.tcl -notrace
+Command: synth_design -top dc_motor_encoder -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8340 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 344.918 ; gain = 93.336
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'dc_motor_encoder' [D:/ME/FPGA CD_rev2_1/dc_motor/uygulama_2/dc_motor_encoder/dc_motor_encoder.srcs/sources_1/new/dc_motor_encoder.vhd:62]
+	Parameter init_d bound to: 4000000 - type: integer 
+	Parameter com_dl bound to: 200000 - type: integer 
+	Parameter com_ds bound to: 5000 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element mesaj_reg[0] was removed.  [D:/ME/FPGA CD_rev2_1/dc_motor/uygulama_2/dc_motor_encoder/dc_motor_encoder.srcs/sources_1/new/dc_motor_encoder.vhd:622]
+WARNING: [Synth 8-6014] Unused sequential element mesaj_reg[1] was removed.  [D:/ME/FPGA CD_rev2_1/dc_motor/uygulama_2/dc_motor_encoder/dc_motor_encoder.srcs/sources_1/new/dc_motor_encoder.vhd:622]
+WARNING: [Synth 8-6014] Unused sequential element mesaj_reg[2] was removed.  [D:/ME/FPGA CD_rev2_1/dc_motor/uygulama_2/dc_motor_encoder/dc_motor_encoder.srcs/sources_1/new/dc_motor_encoder.vhd:622]
+WARNING: [Synth 8-6014] Unused sequential element mesaj_reg[3] was removed.  [D:/ME/FPGA CD_rev2_1/dc_motor/uygulama_2/dc_motor_encoder/dc_motor_encoder.srcs/sources_1/new/dc_motor_encoder.vhd:622]
+WARNING: [Synth 8-6014] Unused sequential element mesaj_reg[4] was removed.  [D:/ME/FPGA CD_rev2_1/dc_motor/uygulama_2/dc_motor_encoder/dc_motor_encoder.srcs/sources_1/new/dc_motor_encoder.vhd:622]
+WARNING: [Synth 8-6014] Unused sequential element mesaj_reg[5] was removed.  [D:/ME/FPGA CD_rev2_1/dc_motor/uygulama_2/dc_motor_encoder/dc_motor_encoder.srcs/sources_1/new/dc_motor_encoder.vhd:622]
+WARNING: [Synth 8-6014] Unused sequential element mesaj_reg[6] was removed.  [D:/ME/FPGA CD_rev2_1/dc_motor/uygulama_2/dc_motor_encoder/dc_motor_encoder.srcs/sources_1/new/dc_motor_encoder.vhd:622]
+WARNING: [Synth 8-6014] Unused sequential element mesaj_reg[7] was removed.  [D:/ME/FPGA CD_rev2_1/dc_motor/uygulama_2/dc_motor_encoder/dc_motor_encoder.srcs/sources_1/new/dc_motor_encoder.vhd:622]
+WARNING: [Synth 8-6014] Unused sequential element mesaj_reg[8] was removed.  [D:/ME/FPGA CD_rev2_1/dc_motor/uygulama_2/dc_motor_encoder/dc_motor_encoder.srcs/sources_1/new/dc_motor_encoder.vhd:622]
+INFO: [Synth 8-256] done synthesizing module 'dc_motor_encoder' (1#1) [D:/ME/FPGA CD_rev2_1/dc_motor/uygulama_2/dc_motor_encoder/dc_motor_encoder.srcs/sources_1/new/dc_motor_encoder.vhd:62]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 386.496 ; gain = 134.914
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 386.496 ; gain = 134.914
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/ME/FPGA CD_rev2_1/dc_motor/uygulama_2/dc_motor_encoder/dc_motor_encoder.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc]
+CRITICAL WARNING: [Designutils 20-1307] Command 'LCD_RS' is not supported in the xdc constraint file. [D:/ME/FPGA CD_rev2_1/dc_motor/uygulama_2/dc_motor_encoder/dc_motor_encoder.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc:205]
+Finished Parsing XDC File [D:/ME/FPGA CD_rev2_1/dc_motor/uygulama_2/dc_motor_encoder/dc_motor_encoder.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/ME/FPGA CD_rev2_1/dc_motor/uygulama_2/dc_motor_encoder/dc_motor_encoder.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/dc_motor_encoder_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/dc_motor_encoder_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 699.957 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 699.957 ; gain = 448.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 699.957 ; gain = 448.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 699.957 ; gain = 448.375
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'i_reg' in module 'dc_motor_encoder'
+INFO: [Synth 8-802] inferred FSM for state register 'adim_lcd_reg' in module 'dc_motor_encoder'
+INFO: [Synth 8-5546] ROM "clock_1khz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "D" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "i" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "adim" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "sayac" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "adim_lcd" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element m_reg was removed.  [D:/ME/FPGA CD_rev2_1/dc_motor/uygulama_2/dc_motor_encoder/dc_motor_encoder.srcs/sources_1/new/dc_motor_encoder.vhd:731]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                            00000 |                            00000
+                 iSTATE0 |                            00001 |                            00001
+                 iSTATE1 |                            00010 |                            00010
+                 iSTATE2 |                            00011 |                            00011
+                 iSTATE3 |                            00100 |                            00100
+                 iSTATE4 |                            00101 |                            00101
+                 iSTATE5 |                            00110 |                            00110
+                 iSTATE6 |                            00111 |                            00111
+                 iSTATE7 |                            01000 |                            01000
+                 iSTATE8 |                            01001 |                            01001
+                 iSTATE9 |                            01010 |                            01010
+                iSTATE10 |                            01011 |                            01011
+                iSTATE11 |                            01100 |                            01100
+                iSTATE12 |                            01101 |                            01101
+                iSTATE13 |                            01110 |                            01110
+                iSTATE14 |                            01111 |                            01111
+                iSTATE15 |                            10000 |                            10000
+                iSTATE16 |                            10001 |                            10001
+                iSTATE17 |                            10010 |                            10010
+                iSTATE18 |                            10011 |                            10011
+                iSTATE19 |                            10100 |                            10100
+                iSTATE20 |                            10101 |                            10101
+                iSTATE21 |                            10110 |                            10110
+                iSTATE22 |                            10111 |                            10111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'adim_lcd_reg' using encoding 'sequential' in module 'dc_motor_encoder'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               00
+                 iSTATE0 |                             0010 |                               01
+                 iSTATE1 |                             0100 |                               10
+                 iSTATE2 |                             1000 |                               11
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'i_reg' using encoding 'one-hot' in module 'dc_motor_encoder'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 699.957 ; gain = 448.375
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     36 Bit       Adders := 1     
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input     26 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 7     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               36 Bit    Registers := 1     
+	               27 Bit    Registers := 1     
+	               26 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     36 Bit        Muxes := 2     
+	  32 Input     36 Bit        Muxes := 2     
+	   4 Input     36 Bit        Muxes := 2     
+	   2 Input     27 Bit        Muxes := 2     
+	   4 Input     27 Bit        Muxes := 1     
+	   2 Input     26 Bit        Muxes := 3     
+	  24 Input     26 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	  24 Input      7 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	  25 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   9 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	  24 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 5     
+	  32 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module dc_motor_encoder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     36 Bit       Adders := 1     
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input     26 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 7     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               36 Bit    Registers := 1     
+	               27 Bit    Registers := 1     
+	               26 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     36 Bit        Muxes := 2     
+	  32 Input     36 Bit        Muxes := 2     
+	   4 Input     36 Bit        Muxes := 2     
+	   2 Input     27 Bit        Muxes := 2     
+	   4 Input     27 Bit        Muxes := 1     
+	   2 Input     26 Bit        Muxes := 3     
+	  24 Input     26 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	  24 Input      7 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	  25 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   9 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	  24 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 5     
+	  32 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "clock_1khz" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element m_reg was removed.  [D:/ME/FPGA CD_rev2_1/dc_motor/uygulama_2/dc_motor_encoder/dc_motor_encoder.srcs/sources_1/new/dc_motor_encoder.vhd:731]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\adim_reg[5] )
+WARNING: [Synth 8-3332] Sequential element (adim_reg[5]) is unused and will be removed from module dc_motor_encoder.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 699.957 ; gain = 448.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-----------------+------------+---------------+----------------+
+|Module Name      | RTL Object | Depth x Width | Implemented As | 
++-----------------+------------+---------------+----------------+
+|dc_motor_encoder | adim       | 32x6          | LUT            | 
++-----------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 699.957 ; gain = 448.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 699.957 ; gain = 448.375
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 699.957 ; gain = 448.375
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 699.957 ; gain = 448.375
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 699.957 ; gain = 448.375
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 699.957 ; gain = 448.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 699.957 ; gain = 448.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 699.957 ; gain = 448.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 699.957 ; gain = 448.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    31|
+|3     |LUT1   |     3|
+|4     |LUT2   |    31|
+|5     |LUT3   |    40|
+|6     |LUT4   |    48|
+|7     |LUT5   |   109|
+|8     |LUT6   |    44|
+|9     |MUXF7  |    29|
+|10    |FDRE   |   157|
+|11    |FDSE   |    16|
+|12    |IBUF   |     7|
+|13    |OBUF   |     9|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   525|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 699.957 ; gain = 448.375
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 699.957 ; gain = 134.914
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 699.957 ; gain = 448.375
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 67 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 12 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 699.957 ; gain = 460.895
+INFO: [Common 17-1381] The checkpoint 'D:/ME/FPGA CD_rev2_1/dc_motor/uygulama_2/dc_motor_encoder/dc_motor_encoder.runs/synth_1/dc_motor_encoder.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file dc_motor_encoder_utilization_synth.rpt -pb dc_motor_encoder_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 699.957 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Jul  7 13:32:57 2018...

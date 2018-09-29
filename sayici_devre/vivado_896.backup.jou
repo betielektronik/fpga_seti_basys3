@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sat Jul 28 12:42:12 2018
+# Process ID: 896
+# Current directory: D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney6_sayici_devre
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5432 D:\ME\FPGA CD_rev2_1\vhdl_projeleri\deney6_sayici_devre\deney6_sayici_devre.xpr
+# Log file: D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney6_sayici_devre/vivado.log
+# Journal file: D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney6_sayici_devre\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney6_sayici_devre/deney6_sayici_devre.xpr}
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1

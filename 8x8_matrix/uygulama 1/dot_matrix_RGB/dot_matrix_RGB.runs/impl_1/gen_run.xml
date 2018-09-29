@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1445069210">
+  <File Type="OPT-DCP" Name="rgb_opt.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="PWROPT-DCP" Name="rgb_pwropt.dcp"/>
+  <File Type="ROUTE-DCP" Name="rgb_routed.dcp"/>
+  <File Type="PA-TCL" Name="rgb.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-DRC" Name="rgb_drc_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="rgb_drc_pwropted.rpt"/>
+  <File Type="OPT-HWDEF" Name="rgb.hwdef"/>
+  <File Type="PLACE-DCP" Name="rgb_placed.dcp"/>
+  <File Type="PLACE-IO" Name="rgb_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="rgb_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="rgb_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="rgb_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="rgb_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="rgb_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="rgb_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="rgb_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="rgb_physopt.dcp"/>
+  <File Type="RDI-RDI" Name="rgb.vdi"/>
+  <File Type="PHYSOPT-DRC" Name="rgb_drc_physopted.rpt"/>
+  <File Type="ROUTE-DRC" Name="rgb_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="rgb_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="rgb_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="rgb_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="rgb_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="rgb_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="rgb_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="rgb_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="rgb_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="rgb_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="rgb_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="rgb_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="rgb_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="rgb_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="rgb_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="rgb.bit"/>
+  <File Type="BG-BIN" Name="rgb.bin"/>
+  <File Type="BITSTR-MSK" Name="rgb.msk"/>
+  <File Type="BITSTR-RBT" Name="rgb.rbt"/>
+  <File Type="BITSTR-NKY" Name="rgb.nky"/>
+  <File Type="BITSTR-BMM" Name="rgb_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="rgb.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="rgb.sysdef"/>
+  <File Type="BG-BGN" Name="rgb.bgn"/>
+  <File Type="BG-DRC" Name="rgb.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/kareler_son_hali.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="rgb"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/kareler_son_hali_cons.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015">
+      <Desc>Vivado Implementation Defaults</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

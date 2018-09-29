@@ -1,0 +1,119 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Mon Aug 13 18:52:54 2018
+# Process ID: 6512
+# Current directory: D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney6_sayici_devre
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6496 D:\ME\FPGA CD_rev2_1\vhdl_projeleri\deney6_sayici_devre\deney6_sayici_devre.xpr
+# Log file: D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney6_sayici_devre/vivado.log
+# Journal file: D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney6_sayici_devre\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney6_sayici_devre/deney6_sayici_devre.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney6_sayici_devre/deney6_sayici_devre.runs/impl_1/sayici_devre.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney6_sayici_devre/deney6_sayici_devre.runs/impl_1/sayici_devre.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney6_sayici_devre/deney6_sayici_devre.runs/impl_1/sayici_devre.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+open_project {D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.xpr}
+current_project deney6_sayici_devre
+close_project
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.runs/impl_1/hesap_makinasi.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.runs/impl_1/hesap_makinasi.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.runs/impl_1/hesap_makinasi.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.runs/impl_1/hesap_makinasi.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.runs/impl_1/hesap_makinasi.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+open_run synth_1 -name synth_1
+refresh_design
+close_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.runs/impl_1/hesap_makinasi.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+close_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.runs/impl_1/hesap_makinasi.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney20_hesap_makinesi/deney20_hesap_makinesi.runs/impl_1/hesap_makinasi.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

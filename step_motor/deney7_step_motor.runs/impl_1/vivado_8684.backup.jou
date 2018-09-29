@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sat Jun 30 12:56:30 2018
+# Process ID: 8684
+# Current directory: D:/ME/FPGA CD_rev2_1/deney7_step_motor/deney7_step_motor.runs/impl_1
+# Command line: vivado.exe -log step_motor.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source step_motor.tcl -notrace
+# Log file: D:/ME/FPGA CD_rev2_1/deney7_step_motor/deney7_step_motor.runs/impl_1/step_motor.vdi
+# Journal file: D:/ME/FPGA CD_rev2_1/deney7_step_motor/deney7_step_motor.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source step_motor.tcl -notrace

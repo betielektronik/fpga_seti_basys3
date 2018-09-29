@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sat Jul 21 12:14:20 2018
+# Process ID: 5736
+# Current directory: D:/ME/FPGA CD_rev2_1/deney9_adc/digital_termometre/adc_digital_termometre
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7852 D:\ME\FPGA CD_rev2_1\deney9_adc\digital_termometre\adc_digital_termometre\adc_digital_termometre.xpr
+# Log file: D:/ME/FPGA CD_rev2_1/deney9_adc/digital_termometre/adc_digital_termometre/vivado.log
+# Journal file: D:/ME/FPGA CD_rev2_1/deney9_adc/digital_termometre/adc_digital_termometre\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/ME/FPGA CD_rev2_1/deney9_adc/digital_termometre/adc_digital_termometre/adc_digital_termometre.xpr}
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/ME/FPGA CD_rev2_1/deney9_adc/digital_termometre/adc_digital_termometre/adc_digital_termometre.runs/impl_1/termometre.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/ME/FPGA CD_rev2_1/deney9_adc/digital_termometre/adc_digital_termometre/adc_digital_termometre.runs/impl_1/termometre.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/ME/FPGA CD_rev2_1/deney6_sayici_devre/deney6_sayici_devre.runs/impl_1/sayici_devre.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

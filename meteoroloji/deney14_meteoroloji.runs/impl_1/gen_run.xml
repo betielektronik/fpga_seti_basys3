@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1533999964">
+  <File Type="PWROPT-DCP" Name="meteoroloji_pwropt.dcp"/>
+  <File Type="ROUTE-PWR" Name="meteoroloji_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="meteoroloji.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="meteoroloji_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="meteoroloji_reports.tcl"/>
+  <File Type="BG-DRC" Name="meteoroloji.drc"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="meteoroloji_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="meteoroloji_timing_summary_init.rpt"/>
+  <File Type="OPT-HWDEF" Name="meteoroloji.hwdef"/>
+  <File Type="OPT-DCP" Name="meteoroloji_opt.dcp"/>
+  <File Type="OPT-DRC" Name="meteoroloji_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="meteoroloji_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="meteoroloji_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="meteoroloji_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="meteoroloji_placed.dcp"/>
+  <File Type="PLACE-IO" Name="meteoroloji_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="meteoroloji_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="meteoroloji_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="meteoroloji_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="meteoroloji_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="meteoroloji_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="meteoroloji_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="meteoroloji_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="meteoroloji_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="meteoroloji_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="meteoroloji_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="meteoroloji_drc_physopted.rpt"/>
+  <File Type="BG-BIT" Name="meteoroloji.bit"/>
+  <File Type="PHYSOPT-TIMING" Name="meteoroloji_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="meteoroloji_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="meteoroloji_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="meteoroloji_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="meteoroloji_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="meteoroloji_drc_routed.pb"/>
+  <File Type="BITSTR-MSK" Name="meteoroloji.msk"/>
+  <File Type="ROUTE-DRC-RPX" Name="meteoroloji_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="meteoroloji.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="meteoroloji_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-RBT" Name="meteoroloji.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="meteoroloji_methodology_drc_routed.rpx"/>
+  <File Type="BG-BIN" Name="meteoroloji.bin"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="meteoroloji_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="meteoroloji_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="meteoroloji_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="meteoroloji_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="meteoroloji_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="meteoroloji_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="meteoroloji_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="meteoroloji_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="meteoroloji.vdi"/>
+  <File Type="ROUTE-CLK" Name="meteoroloji_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="meteoroloji_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="meteoroloji_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="meteoroloji_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="meteoroloji_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="meteoroloji_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="meteoroloji.nky"/>
+  <File Type="BITSTR-BMM" Name="meteoroloji_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="meteoroloji.mmi"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="meteoroloji.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="meteoroloji.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/new/meteoroloji.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/meteoroloji.vhd"/>
+        <Attr Name="ImportTime" Val="1533984176"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="meteoroloji"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/meteoroloji.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

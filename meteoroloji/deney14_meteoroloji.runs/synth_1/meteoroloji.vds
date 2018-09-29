@@ -1,0 +1,543 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sat Aug 11 18:06:06 2018
+# Process ID: 3456
+# Current directory: D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.runs/synth_1
+# Command line: vivado.exe -log meteoroloji.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source meteoroloji.tcl
+# Log file: D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.runs/synth_1/meteoroloji.vds
+# Journal file: D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source meteoroloji.tcl -notrace
+Command: synth_design -top meteoroloji -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4200 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 345.406 ; gain = 94.633
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'meteoroloji' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:43]
+	Parameter init_d bound to: 4000000 - type: integer 
+	Parameter com_dl bound to: 200000 - type: integer 
+	Parameter com_ds bound to: 5000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'meteoroloji' (1#1) [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:43]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 386.922 ; gain = 136.148
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 386.922 ; gain = 136.148
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/constrs_1/new/meteoroloji.xdc]
+Finished Parsing XDC File [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/constrs_1/new/meteoroloji.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/constrs_1/new/meteoroloji.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/meteoroloji_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/meteoroloji_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 706.395 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 706.395 ; gain = 455.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 706.395 ; gain = 455.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 706.395 ; gain = 455.621
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'mesaj_lcd_reg[9][7:0]' into 'mesaj_lcd_reg[3][7:0]' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+INFO: [Synth 8-4471] merging register 'mesaj_lcd_reg[12][7:0]' into 'mesaj_lcd_reg[7][7:0]' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+INFO: [Synth 8-4471] merging register 'mesaj_lcd_reg[14][7:0]' into 'mesaj_lcd_reg[7][7:0]' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+INFO: [Synth 8-4471] merging register 'mesaj_lcd_reg[15][7:0]' into 'mesaj_lcd_reg[5][7:0]' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+INFO: [Synth 8-4471] merging register 'mesaj_lcd_reg[17][7:0]' into 'mesaj_lcd_reg[16][7:0]' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+INFO: [Synth 8-4471] merging register 'mesaj_lcd_reg[18][7:0]' into 'mesaj_lcd_reg[16][7:0]' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+INFO: [Synth 8-4471] merging register 'mesaj_lcd_reg[19][7:0]' into 'mesaj_lcd_reg[16][7:0]' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+INFO: [Synth 8-4471] merging register 'mesaj_lcd_reg[20][7:0]' into 'mesaj_lcd_reg[16][7:0]' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+INFO: [Synth 8-4471] merging register 'mesaj_lcd_reg[21][7:0]' into 'mesaj_lcd_reg[16][7:0]' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+INFO: [Synth 8-4471] merging register 'mesaj_lcd_reg[22][7:0]' into 'mesaj_lcd_reg[16][7:0]' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+INFO: [Synth 8-4471] merging register 'mesaj_lcd_reg[23][7:0]' into 'mesaj_lcd_reg[16][7:0]' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+INFO: [Synth 8-4471] merging register 'mesaj_lcd_reg[24][7:0]' into 'mesaj_lcd_reg[16][7:0]' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+INFO: [Synth 8-4471] merging register 'mesaj_lcd_reg[25][7:0]' into 'mesaj_lcd_reg[16][7:0]' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+INFO: [Synth 8-4471] merging register 'mesaj_lcd_reg[26][7:0]' into 'mesaj_lcd_reg[16][7:0]' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+INFO: [Synth 8-4471] merging register 'mesaj_lcd_reg[27][7:0]' into 'mesaj_lcd_reg[16][7:0]' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+INFO: [Synth 8-4471] merging register 'mesaj_lcd_reg[28][7:0]' into 'mesaj_lcd_reg[16][7:0]' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+INFO: [Synth 8-4471] merging register 'mesaj_lcd_reg[29][7:0]' into 'mesaj_lcd_reg[16][7:0]' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+INFO: [Synth 8-4471] merging register 'mesaj_lcd_reg[30][7:0]' into 'mesaj_lcd_reg[16][7:0]' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+INFO: [Synth 8-4471] merging register 'mesaj_lcd_reg[31][7:0]' into 'mesaj_lcd_reg[16][7:0]' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+INFO: [Synth 8-4471] merging register 'mesaj_lcd_reg[32][7:0]' into 'mesaj_lcd_reg[16][7:0]' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+INFO: [Synth 8-4471] merging register 'mesaj_lcd_reg[33][7:0]' into 'mesaj_lcd_reg[16][7:0]' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+INFO: [Synth 8-4471] merging register 'mesaj_lcd_reg[34][7:0]' into 'mesaj_lcd_reg[16][7:0]' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+INFO: [Synth 8-4471] merging register 'mesaj_lcd_reg[35][7:0]' into 'mesaj_lcd_reg[16][7:0]' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+INFO: [Synth 8-4471] merging register 'mesaj_lcd_reg[36][7:0]' into 'mesaj_lcd_reg[16][7:0]' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+INFO: [Synth 8-4471] merging register 'mesaj_lcd_reg[37][7:0]' into 'mesaj_lcd_reg[16][7:0]' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+INFO: [Synth 8-4471] merging register 'mesaj_lcd_reg[38][7:0]' into 'mesaj_lcd_reg[16][7:0]' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+INFO: [Synth 8-4471] merging register 'mesaj_lcd_reg[39][7:0]' into 'mesaj_lcd_reg[16][7:0]' [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+WARNING: [Synth 8-6014] Unused sequential element mesaj_lcd_reg[9] was removed.  [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+WARNING: [Synth 8-6014] Unused sequential element mesaj_lcd_reg[12] was removed.  [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+WARNING: [Synth 8-6014] Unused sequential element mesaj_lcd_reg[14] was removed.  [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+WARNING: [Synth 8-6014] Unused sequential element mesaj_lcd_reg[15] was removed.  [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+WARNING: [Synth 8-6014] Unused sequential element mesaj_lcd_reg[17] was removed.  [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+WARNING: [Synth 8-6014] Unused sequential element mesaj_lcd_reg[18] was removed.  [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+WARNING: [Synth 8-6014] Unused sequential element mesaj_lcd_reg[19] was removed.  [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+WARNING: [Synth 8-6014] Unused sequential element mesaj_lcd_reg[20] was removed.  [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+WARNING: [Synth 8-6014] Unused sequential element mesaj_lcd_reg[21] was removed.  [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+WARNING: [Synth 8-6014] Unused sequential element mesaj_lcd_reg[22] was removed.  [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+WARNING: [Synth 8-6014] Unused sequential element mesaj_lcd_reg[23] was removed.  [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+WARNING: [Synth 8-6014] Unused sequential element mesaj_lcd_reg[24] was removed.  [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+WARNING: [Synth 8-6014] Unused sequential element mesaj_lcd_reg[25] was removed.  [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+WARNING: [Synth 8-6014] Unused sequential element mesaj_lcd_reg[26] was removed.  [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+WARNING: [Synth 8-6014] Unused sequential element mesaj_lcd_reg[27] was removed.  [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+WARNING: [Synth 8-6014] Unused sequential element mesaj_lcd_reg[28] was removed.  [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+WARNING: [Synth 8-6014] Unused sequential element mesaj_lcd_reg[29] was removed.  [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+WARNING: [Synth 8-6014] Unused sequential element mesaj_lcd_reg[30] was removed.  [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+WARNING: [Synth 8-6014] Unused sequential element mesaj_lcd_reg[31] was removed.  [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+WARNING: [Synth 8-6014] Unused sequential element mesaj_lcd_reg[32] was removed.  [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+WARNING: [Synth 8-6014] Unused sequential element mesaj_lcd_reg[33] was removed.  [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+WARNING: [Synth 8-6014] Unused sequential element mesaj_lcd_reg[34] was removed.  [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+WARNING: [Synth 8-6014] Unused sequential element mesaj_lcd_reg[35] was removed.  [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+WARNING: [Synth 8-6014] Unused sequential element mesaj_lcd_reg[36] was removed.  [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+WARNING: [Synth 8-6014] Unused sequential element mesaj_lcd_reg[37] was removed.  [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+WARNING: [Synth 8-6014] Unused sequential element mesaj_lcd_reg[38] was removed.  [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+WARNING: [Synth 8-6014] Unused sequential element mesaj_lcd_reg[39] was removed.  [D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.srcs/sources_1/imports/new/meteoroloji.vhd:810]
+INFO: [Synth 8-5545] ROM "i" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "i" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "i" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "adim" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 706.395 ; gain = 455.621
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     36 Bit       Adders := 1     
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input     23 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 5     
++---Registers : 
+	               36 Bit    Registers := 1     
+	               27 Bit    Registers := 1     
+	               23 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 7     
+	                7 Bit    Registers := 13    
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	  12 Input     36 Bit        Muxes := 2     
+	   2 Input     36 Bit        Muxes := 2     
+	  32 Input     36 Bit        Muxes := 2     
+	   2 Input     27 Bit        Muxes := 9     
+	   2 Input     23 Bit        Muxes := 3     
+	   7 Input     23 Bit        Muxes := 1     
+	  12 Input     16 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 29    
+	   2 Input      7 Bit        Muxes := 10    
+	  43 Input      6 Bit        Muxes := 1     
+	  25 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	  26 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	  25 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	  12 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 112   
+	  12 Input      1 Bit        Muxes := 11    
+	  32 Input      1 Bit        Muxes := 2     
+	  25 Input      1 Bit        Muxes := 3     
+	  36 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module meteoroloji 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     36 Bit       Adders := 1     
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input     23 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 5     
++---Registers : 
+	               36 Bit    Registers := 1     
+	               27 Bit    Registers := 1     
+	               23 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 7     
+	                7 Bit    Registers := 13    
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	  12 Input     36 Bit        Muxes := 2     
+	   2 Input     36 Bit        Muxes := 2     
+	  32 Input     36 Bit        Muxes := 2     
+	   2 Input     27 Bit        Muxes := 9     
+	   2 Input     23 Bit        Muxes := 3     
+	   7 Input     23 Bit        Muxes := 1     
+	  12 Input     16 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 29    
+	   2 Input      7 Bit        Muxes := 10    
+	  43 Input      6 Bit        Muxes := 1     
+	  25 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	  26 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	  25 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	  12 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 112   
+	  12 Input      1 Bit        Muxes := 11    
+	  32 Input      1 Bit        Muxes := 2     
+	  25 Input      1 Bit        Muxes := 3     
+	  36 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "i" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "i" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+DSP Report: Generating DSP minusOp, operation Mode is: (C:0xfffffffffe00)+A*(B:0x8f).
+DSP Report: operator minusOp is absorbed into DSP minusOp.
+DSP Report: operator multOp is absorbed into DSP minusOp.
+DSP Report: Generating DSP multOp, operation Mode is: A*(B:0x64).
+DSP Report: operator multOp is absorbed into DSP multOp.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\adim_reg[5] )
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[42][0]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[45][0]' (FDE) to 'mesaj_lcd_reg[44][4]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[16][0]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[13][0]' (FDE) to 'mesaj_lcd_reg[45][1]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[11][0]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[10][0]' (FDE) to 'mesaj_lcd_reg[45][1]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[8][0]' (FDE) to 'mesaj_lcd_reg[45][1]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[7][0]' (FDE) to 'mesaj_lcd_reg[45][1]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[6][0]' (FDE) to 'mesaj_lcd_reg[45][1]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[5][0]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[4][0]' (FDE) to 'mesaj_lcd_reg[45][1]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[3][0]' (FDE) to 'mesaj_lcd_reg[45][1]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[2][0]' (FDE) to 'mesaj_lcd_reg[45][2]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[1][0]' (FDE) to 'mesaj_lcd_reg[45][2]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[0][0]' (FDE) to 'mesaj_lcd_reg[45][1]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[43][4]' (FDE) to 'mesaj_lcd_reg[44][4]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[42][4]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[41][4]' (FDE) to 'mesaj_lcd_reg[44][4]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[40][4]' (FDE) to 'mesaj_lcd_reg[44][4]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[45][4]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[44][4]' (FDE) to 'mesaj_lcd_reg[44][5]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[16][4]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[13][4]' (FDE) to 'mesaj_lcd_reg[45][2]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[11][4]' (FDE) to 'mesaj_lcd_reg[45][2]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[10][4]' (FDE) to 'mesaj_lcd_reg[45][2]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[8][4]' (FDE) to 'mesaj_lcd_reg[45][2]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[7][4]' (FDE) to 'mesaj_lcd_reg[45][2]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[6][4]' (FDE) to 'mesaj_lcd_reg[44][5]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[5][4]' (FDE) to 'mesaj_lcd_reg[44][5]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[4][4]' (FDE) to 'mesaj_lcd_reg[45][2]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[3][4]' (FDE) to 'mesaj_lcd_reg[45][2]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[2][4]' (FDE) to 'mesaj_lcd_reg[45][1]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[1][4]' (FDE) to 'mesaj_lcd_reg[45][1]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[0][4]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[42][1]' (FDE) to 'mesaj_lcd_reg[44][5]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[45][1]' (FDE) to 'mesaj_lcd_reg[45][6]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[16][1]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[13][1]' (FDE) to 'mesaj_lcd_reg[45][6]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[11][1]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[10][1]' (FDE) to 'mesaj_lcd_reg[45][6]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[8][1]' (FDE) to 'mesaj_lcd_reg[45][6]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[7][1]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[6][1]' (FDE) to 'mesaj_lcd_reg[45][6]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[5][1]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[4][1]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[3][1]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[2][1]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[1][1]' (FDE) to 'mesaj_lcd_reg[45][6]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[0][1]' (FDE) to 'mesaj_lcd_reg[44][5]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[43][5]' (FDE) to 'mesaj_lcd_reg[44][5]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[42][5]' (FDE) to 'mesaj_lcd_reg[44][5]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[41][5]' (FDE) to 'mesaj_lcd_reg[44][5]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[40][5]' (FDE) to 'mesaj_lcd_reg[44][5]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[45][5]' (FDE) to 'mesaj_lcd_reg[45][2]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[44][5]' (FDE) to 'mesaj_lcd_reg[42][2]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[16][5]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[13][5]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[11][5]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[10][5]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[8][5]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[7][5]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[6][5]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[5][5]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[4][5]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[3][5]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[2][5]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[1][5]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[0][5]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[42][2]' (FDE) to 'mesaj_lcd_reg[42][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[45][2]' (FDE) to 'mesaj_lcd_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[16][2]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[13][2]' (FDE) to 'mesaj_lcd_reg[45][6]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[11][2]' (FDE) to 'mesaj_lcd_reg[45][6]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[10][2]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[8][2]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[7][2]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[6][2]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[5][2]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[4][2]' (FDE) to 'mesaj_lcd_reg[45][6]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[3][2]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[2][2]' (FDE) to 'mesaj_lcd_reg[42][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[1][2]' (FDE) to 'mesaj_lcd_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[0][2]' (FDE) to 'mesaj_lcd_reg[42][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[43][6]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[42][6]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[41][6]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[40][6]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[45][6]' (FDE) to 'mesaj_lcd_reg[13][6]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[44][6]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[16][6]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[13][6]' (FDE) to 'mesaj_lcd_reg[11][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[11][6]' (FDE) to 'mesaj_lcd_reg[11][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[10][6]' (FDE) to 'mesaj_lcd_reg[11][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[8][6]' (FDE) to 'mesaj_lcd_reg[11][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[7][6]' (FDE) to 'mesaj_lcd_reg[11][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[6][6]' (FDE) to 'mesaj_lcd_reg[11][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[5][6]' (FDE) to 'mesaj_lcd_reg[45][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[4][6]' (FDE) to 'mesaj_lcd_reg[11][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[3][6]' (FDE) to 'mesaj_lcd_reg[11][3]'
+INFO: [Synth 8-3886] merging instance 'mesaj_lcd_reg[2][6]' (FDE) to 'mesaj_lcd_reg[42][3]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\mesaj_lcd_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mesaj_lcd_reg[5][7] )
+WARNING: [Synth 8-3332] Sequential element (adim_reg[5]) is unused and will be removed from module meteoroloji.
+WARNING: [Synth 8-3332] Sequential element (butun_vector_reg[35]) is unused and will be removed from module meteoroloji.
+WARNING: [Synth 8-3332] Sequential element (butun_vector_reg[34]) is unused and will be removed from module meteoroloji.
+WARNING: [Synth 8-3332] Sequential element (butun_vector_reg[33]) is unused and will be removed from module meteoroloji.
+WARNING: [Synth 8-3332] Sequential element (butun_vector_reg[32]) is unused and will be removed from module meteoroloji.
+WARNING: [Synth 8-3332] Sequential element (mesaj_lcd_reg[0][3]) is unused and will be removed from module meteoroloji.
+WARNING: [Synth 8-3332] Sequential element (mesaj_lcd_reg[5][7]) is unused and will be removed from module meteoroloji.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 706.395 ; gain = 455.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping                   | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|meteoroloji | (C:0xfffffffffe00)+A*(B:0x8f) | 16     | 8      | 28     | -      | 28     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|meteoroloji | A*(B:0x64)                    | 16     | 7      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 727.621 ; gain = 476.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 727.621 ; gain = 476.848
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 752.105 ; gain = 501.332
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 752.105 ; gain = 501.332
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 752.105 ; gain = 501.332
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 752.105 ; gain = 501.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 752.105 ; gain = 501.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 752.105 ; gain = 501.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 752.105 ; gain = 501.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     2|
+|2     |CARRY4    |    23|
+|3     |DSP48E1_1 |     1|
+|4     |DSP48E1_2 |     1|
+|5     |LUT1      |    14|
+|6     |LUT2      |    59|
+|7     |LUT3      |    47|
+|8     |LUT4      |    53|
+|9     |LUT5      |    64|
+|10    |LUT6      |   201|
+|11    |MUXF7     |     1|
+|12    |FDRE      |   148|
+|13    |IBUF      |     2|
+|14    |IOBUF     |     1|
+|15    |OBUF      |     9|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   626|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 752.105 ; gain = 501.332
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 34 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:41 . Memory (MB): peak = 752.105 ; gain = 181.859
+Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 752.105 ; gain = 501.332
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 29 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+151 Infos, 34 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 752.105 ; gain = 513.520
+INFO: [Common 17-1381] The checkpoint 'D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney14_meteoroloji/deney14_meteoroloji.runs/synth_1/meteoroloji.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file meteoroloji_utilization_synth.rpt -pb meteoroloji_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 752.105 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Aug 11 18:06:59 2018...

@@ -1,0 +1,75 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sat Jul 21 14:04:43 2018
+# Process ID: 8256
+# Current directory: D:/ME/FPGA CD_rev2_1/deney8_LCD/Uygulama2/lcd
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8420 D:\ME\FPGA CD_rev2_1\deney8_LCD\Uygulama2\lcd\lcd.xpr
+# Log file: D:/ME/FPGA CD_rev2_1/deney8_LCD/Uygulama2/lcd/vivado.log
+# Journal file: D:/ME/FPGA CD_rev2_1/deney8_LCD/Uygulama2/lcd\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/ME/FPGA CD_rev2_1/deney8_LCD/Uygulama2/lcd/lcd.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/ME/FPGA CD_rev2_1/deney8_LCD/Uygulama2/lcd/lcd.runs/impl_1/lcd.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/ME/FPGA CD_rev2_1/deney8_LCD/Uygulama2/lcd/lcd.runs/impl_1/lcd.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/ME/FPGA CD_rev2_1/deney9_adc/digital_termometre/adc_digital_termometre/adc_digital_termometre.runs/impl_1/termometre.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/ME/FPGA CD_rev2_1/deney9_adc/digital_voltmetre/voltmetre/voltmetre.runs/impl_1/voltmetre.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/ME/FPGA CD_rev2_1/deney12_dc_motor/uygulama_1/dc_motor_1/dc_motor_1.runs/impl_1/dc_motor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/ME/FPGA CD_rev2_1/deney12_dc_motor/uygulama_2/dc_motor_encoder/dc_motor_encoder.runs/impl_1/dc_motor_encoder.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+open_project {D:/ME/FPGA CD_rev2_1/deney12_dc_motor/uygulama_2/dc_motor_encoder/dc_motor_encoder.xpr}
+current_project lcd
+close_project
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/ME/FPGA CD_rev2_1/deney12_dc_motor/uygulama_2/dc_motor_encoder/dc_motor_encoder.runs/impl_1/dc_motor_encoder.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/ME/FPGA CD_rev2_1/deney13_8x8_matrix/uygulama 1/LCD/lcd.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/ME/FPGA CD_rev2_1/deney13_8x8_matrix/uygulama 1/LCD/lcd.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/ME/FPGA CD_rev2_1/deney13_8x8_matrix/uygulama 1/LCD/lcd.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/ME/FPGA CD_rev2_1/deney13_8x8_matrix/uygulama 1/LCD/lcd.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]

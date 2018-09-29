@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sat Jul 28 12:44:12 2018
+# Process ID: 1144
+# Current directory: D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney7_step_motor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5132 D:\ME\FPGA CD_rev2_1\vhdl_projeleri\deney7_step_motor\deney7_step_motor.xpr
+# Log file: D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney7_step_motor/vivado.log
+# Journal file: D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney7_step_motor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney7_step_motor/deney7_step_motor.xpr}
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1

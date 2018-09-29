@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Sat Oct 17 11:26:39 2015
+# Process ID: 5068
+# Log file: C:/basys3_demo_board/VHDL_projeleri/dot_matrix_beti_yazar/dot_matrix_beti_yazar/dot_matrix_beti_yazar.runs/impl_1/beti_duz.vdi
+# Journal file: C:/basys3_demo_board/VHDL_projeleri/dot_matrix_beti_yazar/dot_matrix_beti_yazar/dot_matrix_beti_yazar.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source beti_duz.tcl -notrace
+Command: open_checkpoint beti_duz_routed.dcp
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.2
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/basys3_demo_board/VHDL_projeleri/dot_matrix_beti_yazar/dot_matrix_beti_yazar/dot_matrix_beti_yazar.runs/impl_1/.Xil/Vivado-5068-Arge/dcp/beti_duz.xdc]
+Finished Parsing XDC File [C:/basys3_demo_board/VHDL_projeleri/dot_matrix_beti_yazar/dot_matrix_beti_yazar/dot_matrix_beti_yazar.runs/impl_1/.Xil/Vivado-5068-Arge/dcp/beti_duz.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 436.207 ; gain = 0.012
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 436.207 ; gain = 0.012
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-484] Checkpoint was created with build 1266856
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-20] Rule violation (CFGBVS-1) Missing CFGBVS and CONFIG_VOLTAGE Design Properties - Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+WARNING: [DRC 23-20] Rule violation (RPBF-3) IO port buffering is incomplete - Device port OE expects both input and output buffering but the buffers are incomplete.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 2 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./beti_duz.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 774.777 ; gain = 338.531
+INFO: [Vivado_Tcl 4-395] Unable to parse hwdef file beti_duz.hwdef
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 17 11:27:10 2015...

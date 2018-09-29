@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sat Jun 30 13:39:11 2018
+# Process ID: 3812
+# Current directory: D:/ME/FPGA CD_rev2_1/deney8_LCD/Uygulama1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3728 D:\ME\FPGA CD_rev2_1\deney8_LCD\Uygulama1\deney8_LCD.xpr
+# Log file: D:/ME/FPGA CD_rev2_1/deney8_LCD/Uygulama1/vivado.log
+# Journal file: D:/ME/FPGA CD_rev2_1/deney8_LCD/Uygulama1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/ME/FPGA CD_rev2_1/deney8_LCD/Uygulama1/deney8_LCD.xpr}
+update_compile_order -fileset sources_1

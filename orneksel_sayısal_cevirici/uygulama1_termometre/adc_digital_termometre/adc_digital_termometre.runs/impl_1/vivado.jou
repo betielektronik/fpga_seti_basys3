@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Mon Jul  9 20:23:13 2018
+# Process ID: 8980
+# Current directory: D:/ME/FPGA CD_rev2_1/deney9_adc/digital_termometre/adc_digital_termometre/adc_digital_termometre.runs/impl_1
+# Command line: vivado.exe -log termometre.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source termometre.tcl -notrace
+# Log file: D:/ME/FPGA CD_rev2_1/deney9_adc/digital_termometre/adc_digital_termometre/adc_digital_termometre.runs/impl_1/termometre.vdi
+# Journal file: D:/ME/FPGA CD_rev2_1/deney9_adc/digital_termometre/adc_digital_termometre/adc_digital_termometre.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source termometre.tcl -notrace

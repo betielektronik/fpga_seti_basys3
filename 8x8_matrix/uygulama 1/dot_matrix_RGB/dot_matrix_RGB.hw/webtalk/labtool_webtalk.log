@@ -1,0 +1,13 @@
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/basys3_demo_board/VHDL_projeleri/dot_matrix/dot_matrix_RGB/dot_matrix_RGB.hw/webtalk/labtool_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 59.637 ; gain = 0.004
+
+    while executing
+"webtalk_transmit -clientid 1328869918 -regid "211103964_0_0_320" -xml C:/basys3_demo_board/VHDL_projeleri/dot_matrix/dot_matrix_RGB/dot_matrix_RGB.hw/..."
+    (file "C:/basys3_demo_board/VHDL_projeleri/dot_matrix/dot_matrix_RGB/dot_matrix_RGB.hw/webtalk/labtool_webtalk.tcl" line 28)
+INFO: [Common 17-206] Exiting Webtalk at Sat Oct 17 11:09:42 2015...

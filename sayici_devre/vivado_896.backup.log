@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sat Jul 28 12:42:12 2018
+# Process ID: 896
+# Current directory: D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney6_sayici_devre
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5432 D:\ME\FPGA CD_rev2_1\vhdl_projeleri\deney6_sayici_devre\deney6_sayici_devre.xpr
+# Log file: D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney6_sayici_devre/vivado.log
+# Journal file: D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney6_sayici_devre\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney6_sayici_devre/deney6_sayici_devre.xpr}
+INFO: [Project 1-313] Project file moved from 'D:/ME/FPGA CD_rev2_1/deney6_sayici_devre' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.3/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 839.258 ; gain = 62.977
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Jul 28 12:42:50 2018] Launched impl_1...
+Run output will be captured here: D:/ME/FPGA CD_rev2_1/vhdl_projeleri/deney6_sayici_devre/deney6_sayici_devre.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 28 12:43:38 2018...
